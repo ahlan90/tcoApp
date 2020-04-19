@@ -1,0 +1,38 @@
+<ion-content>
+
+  <ion-grid class="grid-login">
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h1>TCO App</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="10" offset="1">
+              <ion-item class="ion-no-padding ion-margin-vertical">
+                <ion-label position="stacked">LOGIN</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+
+              <ion-item class="ion-no-padding ion-margin-vertical">
+                <ion-label position="stacked">SENHA</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+
+              <ion-button class="ion-margin-vertical" [routerLink]="['/ocorrencia-list']" expand="full" color="primary">
+                ENTRAR
+              </ion-button>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

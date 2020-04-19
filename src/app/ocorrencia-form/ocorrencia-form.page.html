@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Informações da Ocorrência</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item class="ion-padding-vertical">
+    <ion-label>Selecione Incidente</ion-label>
+    <ion-select value="brown" okText="OK" cancelText="Fechar">
+      <ion-select-option 
+        *ngFor="let incidente of incidentes">
+        {{ incidente.descricao }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <!-- Textarea in an item with a floating label -->
+  <ion-item  class="ion-padding-top">
+    <ion-label position="floating">Descrição da Ocorrência</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar  class="ion-padding-horizontal">
+    <ion-button 
+      [routerLink]="['/tco-form']"
+      expand="block" color="danger">
+      Finalizar Ocorrência
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
